@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap");
+
+:root {
+  --deep-bg: #a683e3;
+  --light-bg: #e4e9fd;
+}
+/* 
+#6F00FF
+#6050DC
+#7B68EE
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  min-height: 900px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.deep-bg {
+  background-color: var(--deep-bg);
+}
+
+.light-bg {
+  background-color: var(--light-bg);
+}
+
+.container {
+  width: 45%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 0 25px;
+}
+
+.box {
+  width: auto;
+  margin: 50px 40px;
+  border-radius: 9px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.6);
+  padding: 18px;
+}
+
+#heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: var(--light-bg);
+}
+
+.component {
+  min-height: 70px;
+  align-items: center;
+  display: flex;
+  border-bottom: 2px solid #b9b9b93d;
+}
+
+/* .box:last-child {
+  border-bottom: 0;
+} */
+
+input:checked + p {
+  text-decoration: line-through;
+  text-decoration-color: #a683e3;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  height: 25px;
+  width: auto;
+  padding: 6px;
+  font-size: 18px;
+  border-radius: 6px;
+  flex: 1;
+  border: none;
+  overflow: hidden;
+}
+
+/* form {
+    text-align: center;
+    margin-left: 20px;
+  } */
+
+.newComponent {
+  margin-top: 40px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-bottom: 2px solid #a683e3;
+  border-radius: 0;
+  padding-bottom: 17px;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 25px;
+  width: 88%;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+}
+
+.plus {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-color: var(--deep-bg);
+  color: white;
+  font-size: 39px;
+  border-radius: 40px;
+  border: none;
+}
+
+.plus:hover {
+  cursor: pointer;
+}
+
+/* ::placeholder {
+  color: grey;
+  opacity: 1;
+} */
+
+footer {
+  color: white;
+  text-align: center;
+}
