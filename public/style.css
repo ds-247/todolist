@@ -84,6 +84,7 @@ p {
   flex: 1;
   border: none;
   overflow: hidden;
+  text-align: left;
 }
 
 /* form {

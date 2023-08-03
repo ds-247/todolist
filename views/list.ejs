@@ -1,0 +1,26 @@
+<%- include('header'); -%>
+<div class="box deep-bg">
+  <h1 id="heading"><%= title %></h1>
+</div>
+<div class="box light-bg">
+  <% for(let i=0;i<lists.length;i++) { %>
+  <div class="component light-bg">
+    <input type="checkbox" />
+    <p class="light-bg"><%= lists[i] %></p>
+  </div>
+  <% console.log(lists[i], i) %>
+  <% } %>
+
+  <div class="newComponent light-bg">
+    <form action="/" method="post">
+      <input
+        class="light-bg"
+        type="text"
+        name="newItem"
+        placeholder="New Item"
+      />
+      <button type="submit" class="plus">+</button>
+    </form>
+  </div>
+</div>
+<%- include('footer'); -%>
